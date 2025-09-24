@@ -19,7 +19,7 @@ The project includes:
 
 ## What I Learned
 
-* Structuring a webpage with HTML
+* Structuring a webpage with semantic HTML
 * Styling with CSS, including colours, fonts, and spacing
 * Using **flexbox** to align and wrap cards
 * Adding simple CSS **animations**
@@ -44,8 +44,19 @@ The project includes:
 
 ---
 
-## Live preview
+## How to Run
 
+1. Download or clone this repository
+2. Open `index.html` in any web browser
+
+No extra setup is required
+
+---
+
+## Credits
+
+* Planet images and facts: **NASA** (public domain resources)
+* **ChatGPT by OpenAI**: helped in writing this README
 
 ---
 
