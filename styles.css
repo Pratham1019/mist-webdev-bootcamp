@@ -8,8 +8,7 @@ html,
 body {
     height: 100%;
     width: 100%;
-    background-image: url(assets/Outer\ Space\ Gradient.png);
-    background-repeat: repeat;
+
 }
 
 .hero {
@@ -19,6 +18,10 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 1.5rem;
+
+    background-image: url(assets/Outer\ Space\ Gradient.png);
+    background-repeat: repeat;
+    padding-bottom: 4rem;
 }
 
 .maintext p {
@@ -40,14 +43,106 @@ body {
 }
 
 @keyframes typing {
-    0% {width: 0;}
-    20% {width: 13ch;}
-    80% {width: 13ch;}
-    100% {width: 0;}
+    0% {
+        width: 0;
+    }
+
+    20% {
+        width: 13ch;
+    }
+
+    80% {
+        width: 13ch;
+    }
+
+    100% {
+        width: 0;
+    }
 }
 
 .subtext {
     color: whitesmoke;
     font-size: 1rem;
     font-family: "Space Mono";
+}
+
+.main-content {
+    min-height: 100vh;
+    padding: 4rem 0 0 0;
+    background-color: rgb(41, 31, 51);
+}
+
+.planets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+
+    padding-bottom: 4rem;
+}
+
+.planets-heading {
+    color: whitesmoke;
+    font-size: 2.5rem;
+    font-family: "Space Mono";
+}
+
+.terrestrial-planets,
+.gas-giants {
+    width: 100%;
+    padding-left: 4rem;
+    align-self: flex-start;
+    padding-left: 4rem;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-family: "Space Mono";
+}
+
+.tpcards,
+.ggcards {
+    padding-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.planet-card {
+    background-image: url(assets/Outer\ Space\ Gradient.png);
+    border-radius: 0.75rem;
+    display: grid;
+    flex: 0 0 15rem;
+    width: 15rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.planet-image {
+    width: 100%;
+    height: 8rem;
+    border-radius: 0.75rem 0.75rem 0 0;
+    object-fit: cover;
+    object-position: 50% 5%;
+}
+
+.lower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.lower img {
+    padding-top: 0.75rem;
+}
+
+.planet-name {
+    padding: 0.5rem 0.75rem;
+}
+
+footer {
+    width: 100%;
+    color: lightgray;
+    font-size: 0.75rem;
+    font-family: "Space Mono";
+    text-align: center;
 }
