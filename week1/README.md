@@ -19,7 +19,7 @@ The project includes:
 
 ## What I Learned
 
-* Structuring a webpage with semantic HTML
+* Structuring a webpage with HTML
 * Styling with CSS, including colours, fonts, and spacing
 * Using **flexbox** to align and wrap cards
 * Adding simple CSS **animations**
@@ -55,6 +55,7 @@ No extra setup is required
 
 ## Credits
 
+* Typewriter animation learnt from [youtube](https://youtu.be/yefgBA1CecI?si=KEBS1KHjZ0pm4DyM)
 * Planet images and facts: **NASA** (public domain resources)
 * **ChatGPT by OpenAI**: helped in writing this README
 
