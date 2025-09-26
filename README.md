@@ -44,8 +44,20 @@ The project includes:
 
 ---
 
-## Live preview
+## How to Run
 
+1. Download or clone this repository
+2. Open `index.html` in any web browser
+
+No extra setup is required
+
+---
+
+## Credits
+
+* Typewriter animation learnt from [youtube](https://youtu.be/yefgBA1CecI?si=KEBS1KHjZ0pm4DyM)
+* Planet images and facts: **NASA** (public domain resources)
+* **ChatGPT by OpenAI**: helped in writing this README
 
 ---
 
