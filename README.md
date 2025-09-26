@@ -47,9 +47,6 @@ The project includes:
 ## Live Preview
 [click here](https://pratham1019.github.io/mist-webdev-bootcamp/)
 
-
-No extra setup is required
-
 ---
 
 ## Credits
