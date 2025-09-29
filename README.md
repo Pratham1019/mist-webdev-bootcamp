@@ -44,12 +44,8 @@ The project includes:
 
 ---
 
-## How to Run
-
-1. Download or clone this repository
-2. Open `index.html` in any web browser
-
-No extra setup is required
+## Live Preview
+[click here](https://pratham1019.github.io/mist-webdev-bootcamp/)
 
 ---
 
