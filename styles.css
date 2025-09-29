@@ -8,25 +8,63 @@ html,
 body {
     height: 100%;
     width: 100%;
-
+    scroll-behavior: smooth;
 }
 
 .hero {
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-bottom: 4rem;
+    background-image: url("assets/background2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-family: "Space Mono";
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: color .18s ease, transform .12s ease;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.navbar a:hover {
+    color: lightblue;
+}
+
+
+.maincontent {
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 1.5rem;
-
-    background-image: url(assets/Outer\ Space\ Gradient.png);
-    background-repeat: repeat;
-    padding-bottom: 4rem;
 }
 
 .maintext p {
     color: whitesmoke;
-    font-size: 4rem;
+    font-size: clamp(3em, 5vw, 6em);
     font-family: "Space Mono";
     border-right: 2px solid white;
     white-space: nowrap;
@@ -66,10 +104,10 @@ body {
     font-family: "Space Mono";
 }
 
-.main-content {
+#main-content {
     min-height: 100vh;
     padding: 4rem 0 0 0;
-    background-color: rgb(41, 31, 51);
+    background-color: black;
 }
 
 .planets {
