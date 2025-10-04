@@ -5,78 +5,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beyond Earth!</title>
-    <link rel="stylesheet" href="styles.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            transition: color .18s ease, transform .12s ease;
+        }
+
+        .maintext p {
+            animation:
+                typing 8s steps(13, end) infinite,
+                cursor .5s step-end infinite alternate;
+        }
+
+        @keyframes cursor {
+            50% {
+                border-right-color: transparent;
+            }
+        }
+
+        @keyframes typing {
+            0% {
+                width: 0;
+            }
+
+            20% {
+                width: 13ch;
+            }
+
+            80% {
+                width: 13ch;
+            }
+
+            100% {
+                width: 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <header class="hero">
-        <nav class="navbar">
-            <div class="right">
-                <a href="#main-content"><p>Planets</p></a>
+    <header
+        class="min-h-full flex justify-center items-center flex-col gap-6 pb-1 bg-[url(/assets/background2.png)] bg-no-repeat bg-cover bg-center">
+        <nav
+            class=" w-full px-6 py-4 font-[Space_Mono] text-gray-100 flex justify-between items-center backdrop-blur-xl border-b border-white/10 navbar">
             </div>
-            <div class="right">
-                <a><p>About</p></a>
-                <a><p>Contact</p></a>
+            <div>
+                <a href="#main-content" class="no-underline text-gray-100 hover:text-blue-200">
+                    <p>Planets</p>
+                </a>
+            </div>
+            <div class="flex justify-center gap-4">
+                <a href="about.html" class="no-underline text-gray-100 hover:text-blue-200">
+                    <p>About</p>
+                </a>
+                <a href="contact.html" class="no-underline text-gray-100 hover:text-blue-200">
+                    <p>Contact</p>
+                </a>
             </div>
         </nav>
         <hr>
-        <div class="maincontent">
+        <div class="h-[90vh] flex justify-center items-center flex-col">
             <div class="maintext">
-                <p>Beyond Earth.</p>
+                <p
+                    class="text-gray-100 text-[clamp(3em,5vw,6em)] font-[Space_Mono] whitespace-nowrap overflow-hidden border-r-[2px]">
+                    Beyond Earth.</p>
             </div>
-            <div class="subtext">
-                <p>Discover the wonders of our solar system and beyond!</p>
+            <div>
+                <p class="text-gray-100 font-[Space_Mono]">Discover the wonders of our solar system and beyond!</p>
             </div>
         </div>
 
     </header>
 
-    <div id="main-content">
-        <div class="planets">
-            <div class="planets-heading">
+    <div class="min-h-[100vh] pt-16 bg-black">
+        <div class="flex justify-center items-center flex-col gap-12 pb-16">
+            <div class="text-gray-100 text-[2.5rem] font-[Space_Mono]">
                 <p>Planets</p>
             </div>
-            <div class="terrestrial-planets">
+            <div class="w-full pl-16 self-start text-gray-100 text-[1.5rem] font-[Space_Mono]">
                 <div class="tpheading">
                     Terrestrial Planets
                 </div>
-                <div class="tpcards">
-                    <div class="mercury planet-card">
-                        <img src="assets/mercury.jpeg" alt="" class="planet-image">
-                        <div class="lower">
-                            <p class="planet-name">Mercury</p>
+                <div class="pt-8 flex gap-8 flex-wrap">
+                    <div
+                        class="mercury bg-[url(assets/Outer_Space_Gradient.png)] rounded-xl flex-shrink-0 flex-grow-0 basis-60 w-60 shadow-[0_0_10px_rgba(0,0,0,0.5)]">
+                        <img src="assets/mercury.jpeg" alt=""
+                            class="w-full h-32 rounded-t-xl object-cover object-[50%_5%]">
+                        <div class="flex justify-between items-center pr-4">
+                            <p class="py-2 px-3">Mercury</p>
                             <a href="https://science.nasa.gov/mercury/facts/" target="_blank"><img
                                     src="assets/search.png" alt=""></a>
                         </div>
                     </div>
 
-                    <div class="venus planet-card">
-                        <img src="assets/venus.jpg" alt="" class="planet-image">
-                        <div class="lower">
-                            <p class="planet-name">Venus</p>
+                    <div
+                        class="venus bg-[url(assets/Outer_Space_Gradient.png)] rounded-xl flex-shrink-0 flex-grow-0 basis-60 w-60 shadow-[0_0_10px_rgba(0,0,0,0.5)]">
+                        <img src="assets/venus.jpg" alt=""
+                            class="w-full h-32 rounded-t-xl object-cover object-[50%_5%]">
+                        <div class="flex justify-between items-center pr-4">
+                            <p class="py-2 px-3">Venus</p>
                             <a href="https://science.nasa.gov/venus/venus-facts/" target="_blank"><img
                                     src="assets/search.png" alt=""></a>
                         </div>
                     </div>
 
-                    <div class="earth planet-card">
-                        <img src="assets/earth.jpg" alt="" class="planet-image">
-                        <div class="lower">
-                            <p class="planet-name">Earth</p>
+                    <div
+                        class="earth bg-[url(assets/Outer_Space_Gradient.png)] rounded-xl flex-shrink-0 flex-grow-0 basis-60 w-60 shadow-[0_0_10px_rgba(0,0,0,0.5)]">
+                        <img src="assets/earth.jpg" alt=""
+                            class="w-full h-32 rounded-t-xl object-cover object-[50%_5%]">
+                        <div class="flex justify-between items-center pr-4">
+                            <p class="py-2 px-3">Earth</p>
                             <a href="https://www.youtube.com/watch?v=p7YXXieghto" target="_blank"><img
                                     src="assets/search.png" alt=""></a>
                         </div>
                     </div>
 
-                    <div class="mars planet-card">
-                        <img src="assets/Mars.jpeg" alt="" class="planet-image">
-                        <div class="lower">
-                            <p class="planet-name">Mars</p>
+                    <div
+                        class="mars bg-[url(assets/Outer_Space_Gradient.png)] rounded-xl flex-shrink-0 flex-grow-0 basis-60 w-60 shadow-[0_0_10px_rgba(0,0,0,0.5)]">
+                        <img src="assets/Mars.jpeg" alt=""
+                            class="w-full h-32 rounded-t-xl object-cover object-[50%_5%]">
+                        <div class="flex justify-between items-center pr-4">
+                            <p class="py-2 px-3">Mars</p>
                             <a href="https://science.nasa.gov/mars/facts/" target="_blank"><img src="assets/search.png"
                                     alt=""></a>
                         </div>
@@ -84,42 +146,50 @@
                     </div>
                 </div>
             </div>
-            <div class="gas-giants">
+            <div class="w-full pl-16 self-start text-gray-100 text-[1.5rem] font-[Space_Mono]">
                 <div class="ggheading">
                     Gas Giants
                 </div>
-                <div class="ggcards">
-                    <div class="jupiter planet-card">
-                        <img src="assets/jupiter.png" alt="" class="planet-image">
-                        <div class="lower">
-                            <p class="planet-name">Jupiter</p>
+                <div class="pt-8 flex gap-8 flex-wrap">
+                    <div
+                        class="jupiter bg-[url(assets/Outer_Space_Gradient.png)] rounded-xl flex-shrink-0 flex-grow-0 basis-60 w-60 shadow-[0_0_10px_rgba(0,0,0,0.5)]">
+                        <img src="assets/jupiter.png" alt=""
+                            class="w-full h-32 rounded-t-xl object-cover object-[50%_5%]">
+                        <div class="flex justify-between items-center pr-4">
+                            <p class="py-2 px-3">Jupiter</p>
                             <a href="https://science.nasa.gov/jupiter/facts/" target="_blank"><img
                                     src="assets/search.png" alt=""></a>
                         </div>
                     </div>
 
-                    <div class="saturn planet-card">
-                        <img src="assets/saturn.png" alt="" class="planet-image">
-                        <div class="lower">
-                            <p class="planet-name">Saturn</p>
+                    <div
+                        class="saturn bg-[url(assets/Outer_Space_Gradient.png)] rounded-xl flex-shrink-0 flex-grow-0 basis-60 w-60 shadow-[0_0_10px_rgba(0,0,0,0.5)]">
+                        <img src="assets/saturn.png" alt=""
+                            class="w-full h-32 rounded-t-xl object-cover object-[50%_5%]">
+                        <div class="flex justify-between items-center pr-4">
+                            <p class="py-2 px-3">Saturn</p>
                             <a href="https://science.nasa.gov/saturn/facts/" target="_blank"><img
                                     src="assets/search.png" alt=""></a>
                         </div>
                     </div>
 
-                    <div class="uranus planet-card">
-                        <img src="assets/uranus.png" alt="" class="planet-image">
-                        <div class="lower">
-                            <p class="planet-name">Uranus</p>
+                    <div
+                        class="uranus bg-[url(assets/Outer_Space_Gradient.png)] rounded-xl flex-shrink-0 flex-grow-0 basis-60 w-60 shadow-[0_0_10px_rgba(0,0,0,0.5)]">
+                        <img src="assets/uranus.png" alt=""
+                            class="w-full h-32 rounded-t-xl object-cover object-[50%_5%]">
+                        <div class="flex justify-between items-center pr-4">
+                            <p class="py-2 px-3">Uranus</p>
                             <a href="https://science.nasa.gov/uranus/facts/" target="_blank"><img
                                     src="assets/search.png" alt=""></a>
                         </div>
                     </div>
 
-                    <div class="neptune planet-card">
-                        <img src="assets/neptune.png" alt="" class="planet-image nep-img">
-                        <div class="lower">
-                            <p class="planet-name">Neptune</p>
+                    <div
+                        class="neptune bg-[url(assets/Outer_Space_Gradient.png)] rounded-xl flex-shrink-0 flex-grow-0 basis-60 w-60 shadow-[0_0_10px_rgba(0,0,0,0.5)]">
+                        <img src="assets/neptune.png" alt=""
+                            class="w-full h-32 rounded-t-xl object-cover object-[50%_5%]">
+                        <div class="flex justify-between items-center pr-4">
+                            <p class="py-2 px-3">Neptune</p>
                             <a href="https://science.nasa.gov/neptune/facts/" target="_blank"><img
                                     src="assets/search.png" alt=""></a>
                         </div>
@@ -127,7 +197,7 @@
                 </div>
             </div>
         </div>
-        <footer>
+        <footer class="w-full text-gray-100 text-xs font-[Space_Mono] text-center">
             Pratham Shah - MIST Web Dev Bootcamp
         </footer>
     </div>
